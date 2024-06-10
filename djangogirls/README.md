@@ -52,6 +52,14 @@ URLs:
 
 
 Django views :
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/f97c8c65-209d-498d-96f4-f4bc45a80cd6)
+
+
+Dodawanie plików html:
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/e1fc03b5-abe6-4064-a67f-2e8b40cc925a)
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/858a09ad-0821-412e-8164-4ccd23fad235)
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/f94581e9-38ad-4c3b-a5ed-bf271b789146)
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/8b99141b-fd2f-4406-ba21-ab1cb00c79d2)
 
 
 
