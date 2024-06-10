@@ -45,5 +45,13 @@ Połączenie z pythonanywhere:
 dodanie superużytkownika
 ![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/909c9a1f-8bec-4e6d-9766-70fdd63e0a96)
 
+URLs:
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/7bc7ae68-78bf-4f15-86f0-4ceca9f96f78)
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/872ce510-1e3e-4564-a1fa-283710aeb86f)
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/b24f4257-16c7-4d71-afa9-e2069c341b71)
+
+
+Django views :
+
 
 
