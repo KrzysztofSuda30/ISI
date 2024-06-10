@@ -61,5 +61,45 @@ Dodawanie plików html:
 ![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/f94581e9-38ad-4c3b-a5ed-bf271b789146)
 ![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/8b99141b-fd2f-4406-ba21-ab1cb00c79d2)
 
+Dodanie posta za pomocą konsoli:
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/9fb3ba58-497c-4c4a-b3ce-9adbc5f286f9)
+
+Wprowadzenie zmien w views.py:
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/25f4ec3d-c6be-4ce9-8f19-2072f5095a5a)
+
+
+Django templates:
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/77594981-4459-44ee-8a46-8f7c9122c10b)
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/a53f32fa-7f22-4795-8db1-a03c032f0b61)
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/6c5304c9-512f-43a0-8520-e7dc229231a7)
+
+
+dodawanie css:
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/4c01967e-7ee6-4c8d-89ad-a0614bdf8d9f)
+
+Template extending:
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/47b738d8-6e2c-48fa-969a-979faf0fb3b9)
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/b2d9f204-3442-43a4-83c1-bcb0d0d742b8)
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/e8c290b0-ae5d-4591-9555-369214d532c8)
+
+
+post's detail:
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/37a97d64-cd63-4018-9038-ea93812cabe8)
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/9c708bb7-6708-4f0f-aa96-7c237ed4da77)
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/7ea6584c-e1a6-4a91-982e-ab6d658dd9c0)
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/e4860d37-3cdd-41cb-a27d-a67b3b1c97b7)
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/044718f1-40d7-47bc-a7bc-7a2ac6c450bb)
+
+
+Dodanie edycji:
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/2fc03920-1408-4b4a-b741-63716e369314)
+
+
+
+
+
+
+
+
 
 
