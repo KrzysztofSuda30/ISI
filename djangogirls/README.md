@@ -42,6 +42,8 @@ Połączenie z pythonanywhere:
 ![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/5fedd1da-90e9-47a4-822d-b9e6abd38895)
 ![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/084da3ad-c699-419f-a646-0459c22a54fb)
 ![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/106a27fb-36b6-4e0a-bfda-d2d555949301)
+dodanie superużytkownika
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/909c9a1f-8bec-4e6d-9766-70fdd63e0a96)
 
 
 
