@@ -209,8 +209,47 @@ Stworzenie katalogu zapisującego baze:
 
 Uruchomienie bazy danych webowe:
 ![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/fe491a98-01e5-4475-ac57-d23298c143db)
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/f2400c1d-54d7-4a5d-8580-84de961c4430)
+
 
 Odcinek14:
+
+Docker inspect:
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/29582075-19bd-41f5-ad31-fc40d7833993)
+
+Pokazuje najważniejsze informacje o kontenerze:
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/35543d35-32bc-4e1c-9127-85eb49984da1)
+
+Odcinek15:
+
+Wypisywanie sieci:
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/63bc4e37-faf4-4b71-9159-4acde7ee2413)
+
+Uruchomienie dwóch kontenerów:
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/53a2a283-d7b9-48ff-b0ca-6e9ec62310cc)
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/4373b294-45d6-401b-9183-9ad0fe52ccbf)
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/d8ea2b9f-4417-4f39-b1f7-f5ff9508a155)
+
+Kontenery zostały domyślnie podłączone:
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/0d0293a9-6590-4733-a5ec-839bf988beb8)
+
+Sprawdzenie czy internet działa w kontenerach:
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/84c87f8c-b85d-4bb4-9e1e-914ecf38f824)
+działają pingi, lecz kontenery nie mogą pingować się nawzajem
+
+Tworzenie własnej sieci:
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/1282888f-81c3-4f3f-b13e-238dfa99351f)
+
+Podłączenie do sieci:
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/31c80e4e-01aa-4a67-86a4-ddcc3dfce7f3)
+Po podłączeniu obu kontenerów do sieci własnej mogą one pingować sie wzajemnie
+
+
+Odcinek17:
+
+
+
+
 
 
 
