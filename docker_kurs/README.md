@@ -306,6 +306,4 @@ Uruchomienie:
 
 Odcinek22:
 
-
-
-
+Porady jak tworzyć obrazy, kontenery oraz Dockerfile w tym łączenie poleceń aby uwydajnić kod.
