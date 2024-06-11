@@ -89,14 +89,64 @@ Przy użyciu ---tag
 
 Odcinek8:
 
+Budowaniu przy użyciu Dockerfile z innego folderu
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/8b28061c-5832-4c47-b6b1-5cd8f29a9311)
+Można wykożystywać tylko pliki z tego samego katalogu albo niższych w Dockerfile
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/a21a42ec-3b0d-4dff-be7a-349c8c46e995)
+Budując można wybraać dowolny Dockerfile używając --file "katalog w którym jest Dockerfile"
 
 
+Odcinek9:
 
+Dodawanie aplikacji do kontenera:
+Budowanie dockerfile do aplikacji:
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/45fb8eca-1393-4c79-a67a-71d7f06d6512)
 
+Następnie docker build:
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/ae3e517c-966d-4b7f-bac5-344273f94d3f)
 
+Uruchomienie aplikacji mając jej obraz:
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/e60c6e8f-5b99-4714-bbb9-d365831ebd5c)
 
+Zmiana na aplikacje webową:
+Zmiana w dockerfile:
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/b3c13f61-9f9e-4129-ab92-6cbe28eac0b5)
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/553c8abd-2a0e-4efb-855c-a23ac4be0318)
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/6cd2625e-a277-4a45-8a39-63ed3d91740f)
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/8b184aba-336b-44cb-9aac-3533949c7915)
+Dzięki docker publish jesteśmy w stanie podłączyć się do aplikacji webowej działającej na kontenerze:
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/70a4f77b-49d6-4e89-af7e-343517d9ed29)
 
+Dzięki takiemu poleceniu jesteśmy w stanie użyć wybranego przez nas portu:
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/d622f8c8-d729-44da-ba60-e0aeb1cacd7f)
+W powyższym wypadku aplikacja działać będzie na porcie 5123
 
+Odcinek10:
+
+Różnica między copy i add
+ADD działa jak copy, z tą różnicą że ADD może pobierać pliki z internetu za pośrednictwem URL. Można również w poleceniu ADD użyć plik tarowy
+Copy używa tylko plików lokalnych
+Polecenie WORKDIR -tworzy katalog jeśli nie istnieje, oraz ustawi katalog jako domyślny dla wszystkich następnych poleceń
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/aa15e55e-6191-445e-af75-e8daf439134f)
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/3a00d39e-d510-4ef9-8554-491f0b100d3f)
+
+Odcinek11:
+
+Polecenie CMD w dockerfile automatycznie uruchamia polecenie w cmd, można zrobić również listę, za pośrednictwem której można uruchomić pojedyńczy program.
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/a561e7cb-4132-4a5e-adc9-ae222238860c)
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/419b43cf-3fde-41ab-aad0-da33e786e2e5)
+Użycie entrypoint:
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/e64bedb0-50a4-4831-8d24-1124d9d11cc2)
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/b561c602-1bd5-4ffb-a1ee-e4a0ccac8634)
+W tym wypadku użycie /nazwa na końcu zostaje uznane jako dodatkowy parametr, podczas gdy w cmd tak nie działało
+
+Jeli doda się cmd przed entrypoint , zostanie on wykorzystany jako domyślny parametr: 
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/90d91cc8-28e1-4d48-9718-978e86883ccd)
+
+Jednak dodanie w konsoli ręcznie dodatkowego parametru nadpisuje polecenie cmd :
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/84687969-eaab-4ffd-8a6a-c824666a3ccf)
+
+Odcinek12:
 
 
 
