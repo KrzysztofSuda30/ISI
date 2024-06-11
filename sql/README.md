@@ -161,29 +161,56 @@ Re-run the query shown above using where job = name instead of the full table.na
 
 Punkt trzeci z poradnika-TOOLS:
 
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/47b44356-dd23-40e0-a846-1b13f865d561)
 
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/c2237501-fe55-4dbd-950a-bd120dc52ae2)
 
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/f4e9c51e-9440-49a0-ba57-6513da4195d9)
 
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/b5492bdc-4a7a-4fe1-bb3b-77631fddf7af)
 
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/9e3936ed-4f8b-4103-9513-4d6046c8442b)
 
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/ae2b0d9c-3880-4afa-a5d7-b2ad1c9754b2)
 
+Are you able to modify the values stored in sqlite_sequence? In particular, are you able to reset the values so that the same sequence numbers are generated again?
+Można modyfikować jedynie dodając nowe wartości do tabeli
 
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/ea724775-27c6-41ba-85ff-ba006946f8bd)
 
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/f01aac36-a9e6-460f-a50a-143da2246cec)
 
+Powrót do pinguin.db
 
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/26702d26-db6c-4bb7-b089-da6fbd22d591)
 
+Use a subquery to find the number of penguins that weigh the same as the lightest penguin.
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/ff06060e-4d81-4bf2-8266-36a3548fd660)
 
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/02cd3b3a-6bab-4427-9c8e-f449feecfe61)
 
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/da470fe4-662d-4080-ac00-4ec86a451741)
 
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/9c2f3fb1-17f6-4327-b9e2-2e40162be824)
 
+Use a CTE to find the number of penguins that weigh the same as the lightest penguin of the same sex and species.
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/7fd17f9a-031b-45b1-910a-cd8d7274bd73)
 
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/49ce6a4d-2c34-4481-8c57-f07c92bb30b2)
 
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/75034146-a378-4db0-9313-379f67fdeeae)
 
+What does each of the expressions shown below produce? Which ones do you think actually attempt to divide by zero?
+iif(0, 123, 1/0)
+iif(1, 123, 1/0)
+iif(0, 1/0, 123)
+iif(1, 1/0, 123)
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/5c52764e-fff4-4dae-9d81-20e81f9623b8)
 
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/6953fa5d-7989-4f28-9e53-23c7c7d75ad8)
 
-
-
-
+Modify the query above so that the outputs are "penguin is small" and "penguin is large" by concatenating the string "penguin is " to the entire case rather than to the individual when branches. (This exercise shows that case/when is an expression rather than a statement.)
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/5d15f1ff-2709-44e5-b91f-5d04aa5f76b7)
 
 
 
