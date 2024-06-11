@@ -65,6 +65,7 @@ Odcinek5:
 
 Kopiowanie z kontenerów do pc i z pc do kontenera:
 ![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/7908c121-1ed8-495a-bfa8-42661ad26ae5)
+
 Do kontenera:
 ![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/f152839b-ac62-401b-9b58-9fba47f7ffcd)
 
@@ -91,6 +92,7 @@ Odcinek8:
 
 Budowaniu przy użyciu Dockerfile z innego folderu
 ![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/8b28061c-5832-4c47-b6b1-5cd8f29a9311)
+
 Można wykożystywać tylko pliki z tego samego katalogu albo niższych w Dockerfile
 ![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/a21a42ec-3b0d-4dff-be7a-349c8c46e995)
 Budując można wybraać dowolny Dockerfile używając --file "katalog w którym jest Dockerfile"
@@ -114,6 +116,7 @@ Zmiana w dockerfile:
 ![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/553c8abd-2a0e-4efb-855c-a23ac4be0318)
 ![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/6cd2625e-a277-4a45-8a39-63ed3d91740f)
 ![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/8b184aba-336b-44cb-9aac-3533949c7915)
+
 Dzięki docker publish jesteśmy w stanie podłączyć się do aplikacji webowej działającej na kontenerze:
 ![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/70a4f77b-49d6-4e89-af7e-343517d9ed29)
 
@@ -135,6 +138,7 @@ Odcinek11:
 Polecenie CMD w dockerfile automatycznie uruchamia polecenie w cmd, można zrobić również listę, za pośrednictwem której można uruchomić pojedyńczy program.
 ![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/a561e7cb-4132-4a5e-adc9-ae222238860c)
 ![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/419b43cf-3fde-41ab-aad0-da33e786e2e5)
+
 Użycie entrypoint:
 ![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/e64bedb0-50a4-4831-8d24-1124d9d11cc2)
 ![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/b561c602-1bd5-4ffb-a1ee-e4a0ccac8634)
@@ -147,6 +151,66 @@ Jednak dodanie w konsoli ręcznie dodatkowego parametru nadpisuje polecenie cmd 
 ![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/84687969-eaab-4ffd-8a6a-c824666a3ccf)
 
 Odcinek12:
+
+W kontenerze dane można zapisać w formie obrazu lub w VOLUMES
+Dzielą się one na: 
+Zarządzane przez dockera
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/246128d3-c13c-4996-88eb-62eecea9b925)
+
+Pokazywanie wszystkich volumes:
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/2c88f5f5-8e84-4ac0-a111-3e909280c5a4)
+
+Kasowanie: 
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/875bf462-dfc9-40e3-ac7d-1fe63b0b16ac)
+
+Testowanie Volumes:
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/c9a0148e-4d78-4a97-8b10-fa779ad4296f)
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/48b1fa0b-3191-48e4-8830-2293490532e2)
+
+jak widzimy, rzy każdym odpaleniu file.txt postaje na nowo
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/7cc50485-1c40-48f0-81ed-0f62322e6059)
+Przy użyciu volumes dane zostają zachowane nie tak jak poprzednio
+
+Nawet po usunięciu kontenerów na których działał volumes: 
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/a355ce5d-f9bb-470b-b404-d3e84565c3db)
+
+Volumes nadal działa, i przechowuje dane: 
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/c47db878-176f-49bf-84aa-6e98c4d55628)
+
+Można stworzyć volumes aby zrobić backup:
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/ee296987-5f9c-48de-b088-ac4328f36723)
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/10457447-b918-41a7-b863-15028b8fcd33)
+
+Podpinanie katalogu pod volumes:
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/b83bf2b1-0744-4128-98fb-a8f1db7b7250)
+
+przed:
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/3fbbf972-de5a-436a-8bce-b6e80e68d8e9)
+
+po:
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/65e06346-62f0-4257-839f-01329f1d8dc2)
+
+Odcinek13:
+
+Użycie zmiennych środowiskowych:
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/1f2d71c6-7e3e-4bf9-9110-a125a76db20d)
+
+Można dodać dodatkową zmienną w następujący sposób:
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/92f2d4f3-f8d6-4107-8db2-31852c870438)
+
+Użycie postgres:
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/5a7d7aed-577f-44f5-92e7-55d70b1ff457)
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/ba9da369-d968-4b5d-ab01-187aa195f18d)
+
+Stworzenie katalogu zapisującego baze:
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/e0fad077-7767-4f22-be21-c9f490179848)
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/1d9353dc-f8b1-4f5d-b85a-fe1bcbb6f333)
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/a682d93c-4ca7-4dca-8be0-31baddf3b524)
+
+Uruchomienie bazy danych webowe:
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/fe491a98-01e5-4475-ac57-d23298c143db)
+
+Odcinek14:
 
 
 
