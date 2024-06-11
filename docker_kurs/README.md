@@ -247,8 +247,64 @@ Po podłączeniu obu kontenerów do sieci własnej mogą one pingować sie wzaje
 
 Odcinek17:
 
+Docker-compose:
+Tworzenie pliku compose:
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/0831ec6b-44c2-4ca5-b1ae-6db6546ed4ef)
+Uruchomienie:
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/f84ad5b6-f58a-4030-a83a-e60d1cf42771)
 
 
+Odcinek18:
+
+Wyłączanie docker compose:
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/80ed7b09-4ef3-44a0-8284-10e9d5fc8845)
+
+Tworzenie aplikacji django:
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/d319bdc9-74f8-4166-b6ae-cf693479ab38)
+
+Aktualizacja compose pliku:
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/a9f74bdb-f50d-4d65-9a0b-2c0446957749)
+
+Po przebudowaniu podstawowej aplikacji uruchamiamy docker-compose:
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/244aea17-f9c2-4256-9dae-dbbf5753948a)
+
+
+Odcinek19:
+
+Dodanie nginx do pliku compose:
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/ed1a87a9-8f69-4a67-90d4-e0c9e3167c45)
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/f2b13767-1560-4bfb-b42c-b57b04e75a4f)
+
+Konfiguracja nginx
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/21a58629-c672-4f0e-bc80-e5a452f2e3ff)
+
+Uruchomienie compose:
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/6dfd9757-781b-41bc-80b6-6f42d5e1f42f)
+
+
+Odcinek20:
+
+Tworzymy pustą aplikację reactową: 
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/0836947b-cf61-4342-9797-bed567010872)
+
+Tworzymy dockerfile:
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/17cc4d84-aef5-457c-a521-e8b123b39476)
+
+Uruchomienie docker run:
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/eb3082f8-e6f9-4d04-958b-b6394e853230)
+
+Odcinek21:
+
+Tworzenie prostej aplikacji C:
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/d6a93476-ee55-4133-be3f-eb7bcfc8b77f)
+
+Tworzenie dockerfile:
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/448472a6-b458-4bda-8dce-c57d324bbe63)
+
+Uruchomienie:
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/55de7d50-8514-4a43-b2e5-2a6bf4601f7c)
+
+Odcinek22:
 
 
 
