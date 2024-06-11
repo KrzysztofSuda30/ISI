@@ -253,18 +253,34 @@ uses a second CTE to calculate their mean; and
 
 ![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/763a25a8-b27a-479c-af16-55d80474142e)
 
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/02bf075b-63e7-4c75-946e-7d2974cae2c9)
 
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/4dee1751-de35-445d-ab1e-383dce7a0926)
 
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/098fa935-2fa0-4e2d-a4b8-f1ee46d15c34)
 
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/b841d6b0-9af0-4717-9b64-d4c15a16885b)
 
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/0684ad90-09ad-4c33-8f9c-3c616dce200b)
 
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/a7adebc0-d639-40b9-aa8f-558fab9bed1b)
 
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/8e282313-4c10-4f01-b447-188e473a8e58)
 
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/aeca43a4-34f5-4bd3-97dd-ece4fcd07e07)
 
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/047ae6fc-6011-4b0b-9f28-6f149d0f3ce7)
 
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/f6d1c987-ba48-4e81-8677-7f5f6191331b)
 
+Create a query that:
+finds the unique weights of the penguins in the penguins database;
+sorts them;
+finds the difference between each successive distinct weight; and
+counts how many times each unique difference appears.
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/0a293c64-a13c-45d7-b245-a69f159d5de3)
 
-
+Część czwarta-Advanced Features:
 
 
 
