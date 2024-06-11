@@ -212,6 +212,48 @@ iif(1, 1/0, 123)
 Modify the query above so that the outputs are "penguin is small" and "penguin is large" by concatenating the string "penguin is " to the entire case rather than to the individual when branches. (This exercise shows that case/when is an expression rather than a statement.)
 ![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/5d15f1ff-2709-44e5-b91f-5d04aa5f76b7)
 
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/d9ae605e-08f6-4199-bd52-c16a142c7558)
+
+Przełączenie się na assays.db :
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/a2f73e61-2688-45c0-9ae4-f69d3786039a)
+
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/c4f3ed57-2b18-4eb1-a79a-d833f7f5f744)
+
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/bc363311-d3a6-4a66-a0a1-101de60e12ff)
+
+Rewrite the pattern-matching query shown above using glob.
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/20a54af5-8a51-49cd-a8d8-9a181276d3c6)
+
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/689959ac-e505-40b8-ae91-0b9794267435)
+
+Write a query whose result includes two rows for each Adelie penguin in the penguins database. How can you check that your query is working correctly?
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/bd0b012d-ffeb-43e4-ae2a-021129af7e11)
+
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/5aa951bd-829f-4dbe-a2fe-ac76e1bb8fcc)
+
+Use intersect to find all Adelie penguins that weigh more than 4000 grams. How can you check that your query is working correctly?
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/a2391a6f-a6c9-441a-8e24-04f983473da1)
+
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/83c48915-d69b-4c5e-96f7-2529747efe24)
+
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/6906bc48-8991-4a83-af5e-587dbfd522dc)
+
+Write a query that:
+uses a CTE to create 1000 random numbers between 0 and 10 inclusive;
+uses a second CTE to calculate their mean; and
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/1c9bafd3-c7ae-4585-b2a2-73f70e8c6b94)
+
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/163f6e06-cb84-429c-9bf5-5b9038a9fd9e)
+
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/9913837f-7115-4b71-a64d-baee64ce5cf5)
+
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/835fbe22-b286-4649-8155-246dd5b713cf)
+
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/d646c479-d116-42a6-9fc8-bb0c4e2e7ebf)
+
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/763a25a8-b27a-479c-af16-55d80474142e)
+
+
 
 
 
