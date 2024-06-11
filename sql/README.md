@@ -282,14 +282,190 @@ counts how many times each unique difference appears.
 
 Część czwarta-Advanced Features:
 
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/b55315fc-b4b2-4237-addb-aafc83c5b57f)
+
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/fabcca47-1e78-48f4-bae3-b6393d5438ab)
+
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/e313b96e-9ba0-4292-be89-fcb289cf34b6)
+
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/5e863f61-e7aa-47e6-8688-fc3b69432e9e)
+
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/a643fa05-5e72-42c2-9b55-9a95c73dd6de)
+
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/42860c40-476f-4b64-a639-212e00dd5e9b)
+
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/1873cfde-7b89-43c9-9170-6c15c0c1ab7f)
+
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/ca23eeeb-fb65-46af-8237-b572b3db9032)
+
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/f755f8a8-2190-46ad-93cb-05d1ae49fd1a)
+
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/d580b542-a19c-43d5-beb4-96cac367bb75)
+
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/9b804bae-ea79-49b8-8632-0ed22fe46789)
+
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/263551bf-9e20-48f8-b57d-87105b22816c)
+
+Część5-Skrypty Python
+
+1Quering from python
 
 
+import sqlite3
+import sys
+
+db_path = "db/penguins.db"
+connection = sqlite3.connect(db_path)
+cursor = connection.execute("select count(*) from penguins;")
+rows = cursor.fetchall()
+print(rows)
+
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/f25ba891-e6be-4ea0-8ffa-5291e07b4391)
+
+2Incremental Fetch
+
+import sqlite3
+import sys
+
+db_path = "db/penguins.db"
+connection = sqlite3.connect(db_path)
+cursor = connection.cursor()
+cursor = cursor.execute("select species, island from penguins limit 5;")
+while row := cursor.fetchone():
+    print(row)
+
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/edb54cbc-07dd-414b-856e-8d512077e247)
+
+3Insert, Delete, and All That
+
+import sqlite3
+
+connection = sqlite3.connect(":memory:")
+cursor = connection.cursor()
+cursor.execute("create table example(num integer);")
+
+cursor.execute("insert into example values (10), (20);")
+print("after insertion", cursor.execute("select * from example;").fetchall())
+
+cursor.execute("delete from example where num < 15;")
+print("after deletion", cursor.execute("select * from example;").fetchall())
+
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/06944d8f-658f-44cf-9356-760c1a993d7b)
+
+4Interpolating Values
+
+import sqlite3
+
+connection = sqlite3.connect(":memory:")
+cursor = connection.cursor()
+cursor.execute("create table example(num integer);")
+
+cursor.executemany("insert into example values (?);", [(10,), (20,)])
+print("after insertion", cursor.execute("select * from example;").fetchall()
+
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/28b2fbb8-077d-45f5-aff4-bd0e13a8bdfe)
+
+5Script Execution
+
+import sqlite3
+
+SETUP = """\
+drop table if exists example;
+create table example(num integer);
+insert into example values (10), (10);
+"""
+
+connection = sqlite3.connect(":memory:")
+cursor = connection.cursor()
+cursor.executescript(SETUP)
+print("after insertion", cursor.execute("select * from example;").fetchall())
+
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/04ad20c3-2740-4e93-aaa5-6bb61a7aa6a0)
+
+6SQLite Exceptions in Python
+
+import sqlite3
+
+SETUP = """\
+create table example(num integer check(num > 0));
+insert into example values (10);
+insert into example values (-1);
+insert into example values (20);
+"""
+
+connection = sqlite3.connect(":memory:")
+cursor = connection.cursor()
+try:
+    cursor.executescript(SETUP)
+except sqlite3.Error as exc:
+    print(f"SQLite exception: {exc}")
+print("after execution", cursor.execute("select * from example;").fetchall())
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/0828129d-dfa9-4084-b7e8-6c4d793398c5)
+
+7Python in SQLite
+
+import sqlite3
+
+SETUP = """\
+create table example(num integer);
+insert into example values (-10), (10), (20), (30);
+"""
 
 
+def clip(value):
+    if value < 0:
+        return 0
+    if value > 20:
+        return 20
+    return value
 
 
+connection = sqlite3.connect(":memory:")
+connection.create_function("clip", 1, clip)
+cursor = connection.cursor()
+cursor.executescript(SETUP)
+for row in cursor.execute("select num, clip(num) from example;").fetchall():
+    print(row)
+
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/612e224f-5990-4729-9f67-69aff0c1651f)
+
+8Handling Dates and Times
+
+from datetime import date
+import sqlite3
 
 
+# Convert date to ISO-formatted string when writing to database
+def _adapt_date_iso(val):
+    return val.isoformat()
 
 
+sqlite3.register_adapter(date, _adapt_date_iso)
 
+
+# Convert ISO-formatted string to date when reading from database
+def _convert_date(val):
+    return date.fromisoformat(val.decode())
+
+
+sqlite3.register_converter("date", _convert_date)
+
+SETUP = """\
+create table events(
+    happened date not null,
+    description text not null
+);
+"""
+
+connection = sqlite3.connect(":memory:", detect_types=sqlite3.PARSE_DECLTYPES)
+cursor = connection.cursor()
+cursor.execute(SETUP)
+
+cursor.executemany(
+    "insert into events values (?, ?);",
+    [(date(2024, 1, 10), "started tutorial"), (date(2024, 1, 29), "finished tutorial")],
+)
+
+for row in cursor.execute("select * from events;").fetchall():
+    print(row)
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/2856bd57-64f7-4b57-92a8-3e72599031a0)
