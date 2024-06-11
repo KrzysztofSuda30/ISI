@@ -150,10 +150,16 @@ Polecenie się wykona, lecz napisze że dotyczyło ono 0 wierszy
 Re-run the query shown above using where job = name instead of the full table.name notation. Is the shortened form easier or harder to read and more or less likely to cause errors?
 ![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/b23c1952-e602-4cea-9412-859fbbf646ec)
 
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/4024c1c2-0029-4d43-aa99-aae72bd7fd05)
+
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/cc883825-7a38-4e3c-b9ef-29cf0a9e2aee)
+
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/a917fd4b-beeb-427b-a36b-63fa82adc295)
+
+![image](https://github.com/KrzysztofSuda30/ISI/assets/172184955/a743b808-b055-490d-80e3-8b0bf5e7227b)
 
 
-
-
+Punkt trzeci z poradnika-TOOLS:
 
 
 
